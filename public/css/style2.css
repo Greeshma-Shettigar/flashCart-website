@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(108, 91, 123, 0.8); /* Semi-transparent background */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.shop-name h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #8d6e7a;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligns content at the bottom */
+    height: 80vh;
+    text-align: center;
+    color: white; /* White text for contrast against the background */
+    background-image: url('flashcart.jpg'); /* Updated path to background image */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    padding-bottom: 20px; /* Adds some space at the bottom */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #ddd; /* Light text for better readability */
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .shop-name h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
